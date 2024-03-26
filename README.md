@@ -1,6 +1,7 @@
 # Packet Tracer - Konfigurasi VLAN
 
 ## Tabel Pengalamatan
+![1](1.jpg)
 
 ## Tujuan
 ### Bagian 1: Verifikasi Konfigurasi VLAN Default
@@ -33,6 +34,7 @@
 #### · VLAN 30: Guest(Default)
 #### · VLAN 99: Management&Native
 #### · VLAN 150: VOICE
+![2](2.jpg)
 
 ### Langkah 2: Verifikasi konfigurasi VLAN.
 #### Perintah mana yang hanya akan menampilkan nama VLAN, status, dan port terkait pada sebuah switch?
@@ -53,12 +55,14 @@
 #### B. Tetapkan port yang tersisa ke VLAN yang sesuai.
 #### · VLAN 20: FastEthernet 0/18
 #### · VLAN 30: FastEthernet 0/6
+![3](3.jpg)
 
 ### Langkah 2: Tetapkan VLAN ke port aktif di S3.
 #### S3 menggunakan penetapan port akses VLAN yang sama dengan S2. Konfigurasikan antarmuka sebagai port akses dan tetapkan VLAN sebagai berikut:
 #### · VLAN 10: FastEthernet 0/11
 #### · VLAN 20: FastEthernet 0/18
 #### · VLAN 30: FastEthernet 0/6
+![4](4.jpg)
 
 ### Langkah 3: Tetapkan VOICE VLAN ke FastEthernet 0/11 di S3.
 #### Seperti yang ditunjukkan pada topologi, antarmuka S3 FastEthernet 0/11 terhubung ke Cisco IP Phone dan PC4. Telepon IP berisi saklar tiga port 10/100 terintegrasi. Satu port di ponsel diberi label Switch dan terhubung ke F0/4. Port lain di ponsel diberi label PC dan terhubung ke PC4. Telepon IP juga memiliki port internal yang menghubungkan ke fungsi telepon IP.
@@ -67,6 +71,7 @@
 #### S3(config)# interface f0/11
 #### S3(config-if)# mls qos trust cos
 #### S3(config-if)# switchport voice vlan 150
+![5](5.jpg)
 
 ### Langkah 4: Verifikasi hilangnya konektivitas.
 #### Sebelumnya, PC yang berbagi jaringan yang sama dapat berhasil melakukan ping satu sama lain.
